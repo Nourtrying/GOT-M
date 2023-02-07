@@ -8,6 +8,62 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  
+  <div class="main-form">
+    <h3 class="title">Registration</h3>
+    <form action="">
+      <div class="user-details">
+        <div class="user-input">
+          <label for="fName">First Name</label>
+          <input type="text" id="fName">
+        </div>
+        <div class="user-input">
+          <label for="lName">Last Name</label>
+          <input type="text" id="lName">
+        </div>
+        <div class="user-input">
+          <label for="classe">Choose your level</label>
+          <select name="classe" id="classe">
+            <option value="1ere">1ere</option>
+            <option value="2eme">2eme</option>
+            <option value="3eme">3eme</option>
+          </select>
+        </div>
+        <div class="user-input">
+          <label for="email">Email Address</label>
+          <input type="email" name="emai
+          " id="email">
+        </div>
+        <div class="user-input">
+          <label for="tel">Phone Nummber</label>
+          <input type="tel">
+        </div>
+        <div class="user-input">
+          <label for="department">department</label>
+          <select name="depart
+          " id="department">
+        <option value="administration">Administration</option>
+        <option value="design">Design</option>
+        <option value="EM">Event Management</option>
+        <option value="HR">Human Resources</option>
+        <option value="MD">Marketing Digital</option>
+        <option value="NA">N/A</option>
+        <option value="sponsoring">Sponsoring</option></select>
+        </div>
+        <div class="user-input">
+          <label for="discordTag">
+            Your Discord Tag
+          </label>
+          <input type="text" name="discordTag" id="discordTag">
+        </div>
+      </div>
+      
+      <div class="wrapper">
+        <button type="submit" class="submit">Register</button>
+      <p class="have-account">Already have an account? <a href="#">Login now</a> </p> 
+      </div>
+      
+
+    </form>
+  </div>
 </body>
 </html>
