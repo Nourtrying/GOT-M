@@ -9,14 +9,29 @@
 }
 
 body{
+  margin: 0;
   height: 100vh;
   background:linear-gradient(135deg, #9795f0 0%, #fbc8d4 100%);
   /* background: linear-gradient(135deg, #71b7e6, #9b59b6); */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  gap: 30px;
+}
 
+.logo{
+  width: 200px;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#gameZoneLogo{
+  width: 20%;
+  height: 100%;
 }
 
 .main-form{
@@ -68,11 +83,14 @@ select {
   color: #414a67;
   /* outline:#9795f0; */
   font-weight: 400;
+  margin: 0;
 }
 
 .wrapper{
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .submit{
   border: none;
