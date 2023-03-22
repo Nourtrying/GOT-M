@@ -1,1 +1,12 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+  background-image: url('assets/backgroungImage/background.png');
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
