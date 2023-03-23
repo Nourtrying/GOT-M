@@ -94,3 +94,11 @@ body {
   height: 50px;
   background-color: gray;
 }
+
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}

@@ -10,6 +10,8 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { EventsComponent } from './events/events.component';
 import { RostersComponent } from './rosters/rosters.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 
@@ -22,7 +24,9 @@ import { RostersComponent } from './rosters/rosters.component';
     AboutComponent,
     HomeComponent,
     EventsComponent,
-    RostersComponent
+    RostersComponent,
+    SignUpComponent,
+    SignInComponent
   ],
   imports: [
     BrowserModule,
