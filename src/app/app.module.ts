@@ -6,6 +6,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContainerComponent } from './container/container.component';
+import { AboutComponent } from './about/about.component';
+import { HomeComponent } from './home/home.component';
+import { EventsComponent } from './events/events.component';
+import { RostersComponent } from './rosters/rosters.component';
 
 
 
@@ -14,7 +18,11 @@ import { ContainerComponent } from './container/container.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    ContainerComponent
+    ContainerComponent,
+    AboutComponent,
+    HomeComponent,
+    EventsComponent,
+    RostersComponent
   ],
   imports: [
     BrowserModule,

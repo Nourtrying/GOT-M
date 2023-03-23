@@ -3,3 +3,13 @@ body{
   flex-direction: column;
   gap: 30px;
 }
+
+.container{
+  /* padding: 100px;
+  height: 500vh; */
+  /* flex: 1; */
+  /* border: 1px solid black;*/
+  display: flex;
+  /* justify-content: space-evenly; */
+  gap: 120px;
+}
