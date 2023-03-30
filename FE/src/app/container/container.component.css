@@ -25,3 +25,62 @@ ul{
   left: 50px;
 }
 
+img{
+  height: 38px;
+  width: 43px;
+}
+a{
+  position: relative;
+}
+.eventsHovered{
+  position: absolute;
+  top: 0;
+  right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.events{
+  opacity: 1;
+}
+
+
+svg:hover {
+  animation: obnoxious 900ms infinite linear;
+}
+
+path {
+  fill: inherit;
+}
+
+@keyframes obnoxious {
+  0% {
+    fill: #FF0000;
+  }
+  
+  15% {
+    fill: #FF7F00;
+  }
+  
+  30% {
+    fill: #FFFF00;
+  }
+  
+  45% {
+    fill: #00FF00;
+  }
+  
+  60% {
+    fill: #0000FF;
+  }
+  
+  75% {
+    fill: #4B0082;
+  }
+  100% {
+    fill: #8F00FF;
+  }
+}

@@ -4,6 +4,7 @@
   /* border: 1px black solid; */
   display: flex;
   justify-content: space-between;
+  
 }
 .first-half{
   width: 100%;
@@ -57,35 +58,41 @@
 
 .buttons{
   width: 100%;
-  max-width: 200px;
+  max-width: 210px;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-right: 20px;
 }
 
 .signin{
   background: transparent;
   border: 0;
   outline: none;
-  color: #E9E9E9;
   font-size: 16px;
   cursor: pointer;
   font-weight: 600;
 }
 
+.signin a {
+  color: #E9E9E9;
+}
+
 .signup{
-  /* width: 100%; */
+  width: 100%;
   width: 122px;
   height: 68px;
   text-align: center;
   border-radius: 34px;
   font-size: 16px;
-  padding: 0px 15px;
   cursor: pointer;
-  color: #2E2E2E;
   border: 0;
   font-weight: 600;
   margin: 0;
+}
+
+.signup a {
+  color: #2E2E2E;
 }
 
 
