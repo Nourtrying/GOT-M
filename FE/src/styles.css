@@ -1,12 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: "Poppins-BlackItalic";
   src: url("assets/fonts/Poppins-BlackItalic.ttf") format("ttf")
 }
 
 html, body{
-  background-image: url('assets/backgroungImage/background.png');
+  background-image: url('assets/backgroungImage/BG-01.svg');
   font-family: 'Poppins', sans-serif;
-  height:100%;
   margin: 0;
+  padding: 0;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  /* border: 3px solid pink; */
+}

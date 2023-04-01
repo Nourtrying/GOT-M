@@ -1,0 +1,219 @@
+
+.parent{
+  width:100%;
+  height:100%;
+
+}
+
+.content{
+  position: relative;
+  margin-left: 100px;
+  margin-right: 20px;
+  padding-left:100px; /* padding-left must be the same as sidebar width */
+  height: 300px; /* This could be anything, content should scroll vertical */
+  box-sizing:border-box;
+  padding-top: 150px; /* padding-top must be the same as header height */
+}
+
+/*NAV BAR*/
+.container{
+  width: 100%;
+  background: rgba(red, green, blue, 0.2);
+  /* border: 1px black solid; */
+  display: flex;
+  justify-content: space-between;
+  
+}
+.first-half{
+  width: 100%;
+  max-width: 1000px;
+  background: rgba(red, green, blue, 0.2);
+  /* border: 1px black solid; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo{
+  padding: 15px;
+}
+
+.search-bar{
+  width: 100%;
+  max-width: 600px;
+  height: 68px;
+  background: #272727;
+  /* rgba(255, 255, 255, 0.2) */
+  /* border: 1px black solid; */
+  border-radius: 34px;
+  padding: 0px 15px;
+  display: flex;
+  align-items: center;
+
+}
+
+.search-bar input{
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  /* padding: 10px 15px; */
+  font-size: 20px;
+  color: #cac7ff;
+
+}
+
+::placeholder{
+  color: #AFAFAF;
+}
+
+.search-bar button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.buttons{
+  width: 100%;
+  max-width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+}
+
+.signin{
+  background: transparent;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.signin a {
+  color: #E9E9E9;
+}
+
+.signup{
+  width: 100%;
+  width: 122px;
+  height: 68px;
+  text-align: center;
+  border-radius: 34px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 0;
+  font-weight: 600;
+  margin: 0;
+}
+
+.signup a {
+  color: #2E2E2E;
+}
+
+
+body {
+  padding: 10px;
+  height: 50px;
+  background-color: gray;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+/*fin navbar*/
+
+/*side bar */
+
+/* .container{
+  padding: 100px;
+  height: 500vh;
+  flex: 1;
+  /* border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  gap: 100px;
+} */
+
+ul{
+  margin-top: 100px;
+  padding: 50px 0px;
+  background-color: #272727;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 90px;
+  align-items: center;
+  border-radius: 46px;
+  position: fixed;
+  left: 50px;
+}
+
+img{
+  height: 38px;
+  width: 43px;
+}
+a{
+  position: relative;
+}
+.eventsHovered{
+  position: absolute;
+  top: 0;
+  right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.events{
+  opacity: 1;
+}
+
+
+svg:hover {
+  animation: obnoxious 900ms infinite linear;
+}
+
+path {
+  fill: inherit;
+}
+
+@keyframes obnoxious {
+  0% {
+    fill: #FF0000;
+  }
+  
+  15% {
+    fill: #FF7F00;
+  }
+  
+  30% {
+    fill: #FFFF00;
+  }
+  
+  45% {
+    fill: #00FF00;
+  }
+  
+  60% {
+    fill: #0000FF;
+  }
+  
+  75% {
+    fill: #4B0082;
+  }
+  100% {
+    fill: #8F00FF;
+  }
+}

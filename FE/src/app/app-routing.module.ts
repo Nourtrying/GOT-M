@@ -1,21 +1,39 @@
-import { Component, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AboutComponent } from './about/about.component';
-import { EventsComponent } from './events/events.component';
-import { HomeComponent } from './home/home.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { RostersComponent } from './rosters/rosters.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { SignUpComponent } from './sign-up/sign-up.component';
+import { AdminComponent } from './layouts/admin/admin.component';
+import { FrontComponent } from './layouts/front/front.component';
+import { MemberComponent } from './layouts/member/member.component';
+import { CreateAssignmentComponent } from './views/admin/manage-assignments/create-assignment/create-assignment/create-assignment.component';
+
 
 const routes: Routes = [
-  {path:'', component:HomeComponent},
-  {path:'about', component:AboutComponent},
-  {path:'events', component:EventsComponent},
-  {path:'rosters', component:RostersComponent},
-  {path:'signIn', component:SignInComponent},
-  {path:'signUp', component:SignUpComponent},
-  {path:'**', component:PageNotFoundComponent}
+  {path:'', component:FrontComponent, children:
+  [
+    {path:'home', loadChildren:() => import('./views/front/home/home.module').then(m => m.HomeModule)},
+    {path:'events', loadChildren:() => import('./views/front/events/events.module').then(m => m.EventsModule)},
+    {path:'about', loadChildren:() => import('./views/front/about/about.module').then(m => m.AboutModule)},
+    {path:'rosters', loadChildren:() => import('./views/front/rosters/rosters.module').then(m => m.RostersModule)},
+    {path:'signUp', loadChildren:() => import('./views/front/sign-up/sign-up.module').then(m => m.SignUpModule)},
+    {path:'signIn', loadChildren:() => import('./views/front/sign-in/sign-in.module').then(m => m.SignInModule)}
+
+
+  ]},
+
+  {path:'admin', component:AdminComponent, children:[
+    {path:'dashboard', loadChildren:()=>import('./views/admin/dashboard/dashboard.module').then(m=>m.DashboardModule)},
+
+    // {path:'manageAssignments', loadChildren:()=>import('./views/admin/manage-assignments/manage-assignments.module').then(m=>m.ManageAssignmentsModule),
+    // children: [
+    //   { path: 'manageAssingment/createAssignment', component: CreateAssignmentComponent }
+    // ]}
+    {path:'manageAssignments', loadChildren:()=>import('./views/admin/manage-assignments/manage-assignments.module').then(m=>m.ManageAssignmentsModule)},
+
+    {path:'manageEvents', loadChildren:()=>import('./views/admin/manage-events/manage-events.module').then(m=>m.ManageEventsModule)},
+
+    {path:'manageMembers', loadChildren:()=>import('./views/admin/manage-members/manage-members.module').then(m=>m.ManageMembersModule)}
+  ]},
+  
+  {path:'member', component:MemberComponent}
 ];
 
 @NgModule({

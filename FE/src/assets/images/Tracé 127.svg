@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="567" height="1032.006" viewBox="0 0 567 1032.006">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1c1c1c"/>
+      <stop offset="0.485" stop-color="#fff"/>
+      <stop offset="1" stop-color="#1c1c1c"/>
+    </linearGradient>
+    <filter id="Tracé_127" x="0" y="0" width="567" height="1032.006" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracé_127)">
+    <g id="Tracé_127-2" data-name="Tracé 127" transform="translate(30 27)" fill="url(#linear-gradient)">
+      <path d="M 246.4323883056641 968.0882568359375 L 3.5 842.3495483398438 L 3.5 3.499954462051392 L 503.5 3.499954462051392 L 503.5 842.2952270507812 L 246.4323883056641 968.0882568359375 Z" stroke="none"/>
+      <path d="M 7 6.99993896484375 L 7 840.2200317382812 L 246.4763488769531 964.1701049804688 L 500 840.1111450195312 L 500 6.99993896484375 L 7 6.99993896484375 M 0 -6.103515625e-05 L 507 -6.103515625e-05 L 507 844.4789428710938 L 246.3881225585938 972.0064697265625 L 0 844.4789428710938 L 0 -6.103515625e-05 Z" stroke="none" fill="#707070"/>
+    </g>
+  </g>
+</svg>
