@@ -14,7 +14,7 @@ const routes: Routes = [
     {path:'about', loadChildren:() => import('./views/front/about/about.module').then(m => m.AboutModule)},
     {path:'rosters', loadChildren:() => import('./views/front/rosters/rosters.module').then(m => m.RostersModule)},
     {path:'signUp', loadChildren:() => import('./views/front/sign-up/sign-up.module').then(m => m.SignUpModule)},
-    {path:'signIn', loadChildren:() => import('./views/front/sign-in/sign-in.module').then(m => m.SignInModule)}
+    {path:'signIn', loadChildren:() => import('./views/front/sign-in/sign-in.module').then(m => m.SignInModule)},
 
 
   ]},
