@@ -32,7 +32,7 @@ const routes: Routes = [
 
     {path:'manageMembers', loadChildren:()=>import('./views/admin/manage-members/manage-members.module').then(m=>m.ManageMembersModule)},
 
-    {path:'ManageEsportteams', loadChildren:()=>import('./views/admin/manage-teams/manage-teams.module').then(m=>m.ManageTeamsModule)}
+    {path:'manageTeams', loadChildren:()=>import('./views/admin/manage-teams/manage-teams.module').then(m=>m.ManageTeamsModule)}
   ]},
   
   {path:'member', component:MemberComponent}
