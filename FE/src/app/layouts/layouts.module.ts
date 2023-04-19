@@ -6,13 +6,17 @@ import { AdminComponent } from './admin/admin.component';
 import { MemberComponent } from './member/member.component';
 import { FrontComponent } from './front/front.component';
 import { RouterModule } from '@angular/router';
+import { SignUpLayoutComponent } from './sign-up-layout/sign-up-layout.component';
+import { SignInLayoutComponent } from './sign-in-layout/sign-in-layout.component';
 
 
 @NgModule({
   declarations: [
     AdminComponent,
     MemberComponent,
-    FrontComponent
+    FrontComponent,
+    SignUpLayoutComponent,
+    SignInLayoutComponent
   ],
   imports: [
     CommonModule,
