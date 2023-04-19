@@ -30,7 +30,9 @@ const routes: Routes = [
 
     {path:'manageEvents', loadChildren:()=>import('./views/admin/manage-events/manage-events.module').then(m=>m.ManageEventsModule)},
 
-    {path:'manageMembers', loadChildren:()=>import('./views/admin/manage-members/manage-members.module').then(m=>m.ManageMembersModule)}
+    {path:'manageMembers', loadChildren:()=>import('./views/admin/manage-members/manage-members.module').then(m=>m.ManageMembersModule)},
+
+    {path:'ManageEsportteams', loadChildren:()=>import('./views/admin/manage-teams/manage-teams.module').then(m=>m.ManageTeamsModule)}
   ]},
   
   {path:'member', component:MemberComponent}
