@@ -36,6 +36,10 @@
   text-align: center;
  }
 
+  /* justify-content: space-between;
+  overflow-wrap: break-word; */
+
+
 
 .rounded-custom {
   border-radius: 28px;

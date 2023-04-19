@@ -1,19 +1,41 @@
+.home{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+.upper{
+  flex: 1;
+}
 .parent{
   width:100%;
   height:100%;
 
 }
-
+.frontpage{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}
 .content{
+  overflow-wrap: break-word;
+  overflow-x: auto;
+  margin-bottom: 50px; /* Set bottom margin to equal footer height */
+  min-height: calc(100% - 50px); /* Set minimum height to equal full viewport height minus footer height */
   position: relative;
   flex: 1; /* This could be anything, content should scroll vertical */
   box-sizing:border-box;
+
   padding-top: 0px;
   margin-right: 42px;
   margin-left: 141px;
   padding-left: 18px;
   margin-top: 50px;
+  padding-top: 150px; /* padding-top must be the same as header height */
+  width : 100%;
+
+
 }
 .frontpage{
   display: flex;
@@ -21,12 +43,8 @@
   width: 100%;
   height: 100%;
 }
-.footer{
-  flex: on;
-  bottom: 0;
-}
 
-/*NAV BAR*/
+
 .container{
   width: 100%;
   background: rgba(red, green, blue, 0.2);
@@ -228,3 +246,6 @@ path {
     fill: #8F00FF;
   }
 }
+
+
+
