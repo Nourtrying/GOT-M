@@ -7,12 +7,13 @@
 
 .content{
   position: relative;
-  margin-left: 100px;
-  margin-right: 20px;
-  padding-left:100px; /* padding-left must be the same as sidebar width */
   flex: 1; /* This could be anything, content should scroll vertical */
   box-sizing:border-box;
-  padding-top: 150px; /* padding-top must be the same as header height */
+  padding-top: 0px;
+  margin-right: 42px;
+  margin-left: 141px;
+  padding-left: 18px;
+  margin-top: 50px;
 }
 .frontpage{
   display: flex;

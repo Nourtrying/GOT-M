@@ -2,7 +2,42 @@
   display: flex;
   flex-direction: column;
   color: #E8E8E8;
-  justify-content: space-between;
+  align-items: center;
+  margin-left: 32px;
+  margin-right: 90px;
+  margin-top: 90px;
+}
+
+.container{
+  margin-bottom: 80px;
+  padding: 0;
+}
+.row {
+  align-items: center;
+}
+
+.col-md-6 {
+  padding: 0;
+  position: relative;
+  height: 550px;
+  width:550px;
+  overflow: hidden;
+  margin: 20px;
+  
+}
+
+.text-container {
+  border-radius: 28px;
+  position: relative;
+  text-align: justify;
+  align-items: center;
+}
+ .text-container h4 {
+  text-align: center;
+ }
 
 
+.rounded-custom {
+  border-radius: 28px;
+  
 }
