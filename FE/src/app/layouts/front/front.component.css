@@ -3,12 +3,18 @@
 
 }
 
+.home-page{
+  width: 100vw;
+  height: 100vh;
+}
+
 .content{
   
   margin-bottom: 50px; /* Set bottom margin to equal footer height */
 
   position: relative;
-
+  height: 100%;
+  width: 100%;
   box-sizing:border-box;
   padding-top: 0px;
   margin-right: 0px;
@@ -24,7 +30,8 @@
 
 .container{
   width: 100%;
-margin: 0px;
+  margin: 0px;
+  height: 100%;
   display: flex;
 
   
@@ -32,11 +39,11 @@ margin: 0px;
 
 footer .container{
   width: 100%;
-margin: auto;
+  flex: 1;
+  margin: auto;
   display: flex;
-
-  
 }
+
 .logo{
   padding: 15px;
 }
