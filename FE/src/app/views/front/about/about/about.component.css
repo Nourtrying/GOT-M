@@ -1,34 +1,47 @@
-.infos{
+
+@font-face {
+  font-family: 'Poppins-BlackItalic';
+  src: url('../../../../../assets/fonts/Poppins-BlackItalic.ttf');
+}
+.container{
+  margin-bottom: 80px;
+  padding: 0;
   display: flex;
   flex-direction: column;
   color: #E8E8E8;
   align-items: center;
-  margin-left: 32px;
-  margin-right: 90px;
-  margin-top: 90px;
-}
-
-.container{
-  margin-bottom: 80px;
-  padding: 0;
+ 
 }
 .row {
   align-items: center;
+  flex-wrap: nowrap;
+
 }
 
 .col-md-6 {
   padding: 0;
   position: relative;
-  height: 550px;
-  width:550px;
+box-sizing:border-box;
+max-height: 500px;
+max-width: 500px;
+min-width: 100px;
+min-height: 100px;
   overflow: hidden;
-  margin: 20px;
+  margin: 40px;
   
 }
-
+h1{
+  font-weight:bolder; 
+  font-family: "Poppins-BlackItalic", sans-serif;
+}
+h4{
+  font-family: 'Poppins', medium;
+  font-size: 25; 
+  color: #e8e8e8da;
+}
 .text-container {
   border-radius: 28px;
-  position: relative;
+  position:sticky;
   text-align: justify;
   align-items: center;
 }

@@ -1,83 +1,57 @@
-.home{
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.upper{
-  flex: 1;
-}
-.parent{
-  width:100%;
-  height:100%;
+.scrolling{
+  overflow-y: scroll;
 
 }
-.frontpage{
-  width:100%;
-  height:100%;
-  display: flex;
-  flex-direction: column;
-}
+
 .content{
-  overflow-wrap: break-word;
-  overflow-x: auto;
+  
   margin-bottom: 50px; /* Set bottom margin to equal footer height */
-  min-height: calc(100% - 50px); /* Set minimum height to equal full viewport height minus footer height */
+
   position: relative;
-  flex: 1; /* This could be anything, content should scroll vertical */
+
   box-sizing:border-box;
-
   padding-top: 0px;
-  margin-right: 42px;
-  margin-left: 141px;
-  padding-left: 18px;
-  margin-top: 50px;
-  padding-top: 150px; /* padding-top must be the same as header height */
-  width : 100%;
+  margin-right: 0px;
+  margin-left: 170px;
+  padding-left: 0px;
+  margin-top: 130px;
+  padding-top: 0px; /* padding-top must be the same as header height */
 
 
 }
-.frontpage{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-}
+
 
 
 .container{
   width: 100%;
-  background: rgba(red, green, blue, 0.2);
-  /* border: 1px black solid; */
+margin: 0px;
   display: flex;
-  justify-content: space-between;
+
   
 }
-.first-half{
-  width: 100%;
-  max-width: 1000px;
-  background: rgba(red, green, blue, 0.2);
-  /* border: 1px black solid; */
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
+footer .container{
+  width: 100%;
+margin: auto;
+  display: flex;
+
+  
+}
 .logo{
   padding: 15px;
 }
 
 .search-bar{
-  width: 100%;
+  width: 90%;
   max-width: 600px;
-  height: 68px;
+  height: 50 px;
   background: #272727;
   /* rgba(255, 255, 255, 0.2) */
   /* border: 1px black solid; */
   border-radius: 34px;
-  padding: 0px 15px;
+  padding: 0px 20px;
   display: flex;
-  align-items: center;
+  align-items:flex-start;
 
 }
 
@@ -87,7 +61,7 @@
   border: 0;
   outline: none;
   /* padding: 10px 15px; */
-  font-size: 20px;
+  font-size: 18px;
   color: #cac7ff;
 
 }
@@ -112,36 +86,6 @@
   margin-right: 20px;
 }
 
-.signin{
-  background: transparent;
-  border: 0;
-  outline: none;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.signin a {
-  color: #E9E9E9;
-}
-
-.signup{
-  width: 100%;
-  width: 122px;
-  height: 68px;
-  text-align: center;
-  border-radius: 34px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 0;
-  font-weight: 600;
-  margin: 0;
-}
-
-.signup a {
-  color: #2E2E2E;
-}
-
 
 body {
   padding: 10px;
@@ -149,13 +93,7 @@ body {
   background-color: gray;
 }
 
-a{
-  text-decoration: none;
-}
 
-a:visited {
-  color: inherit;
-}
 
 /*fin navbar*/
 
@@ -172,19 +110,20 @@ a:visited {
 } */
 
 ul{
-  margin-top: 100px;
-  padding: 50px 0px;
+  margin-top: 150px;
+  padding: 20px 0px;
   background-color: #272727;
   list-style: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  height: 50%;
-  width: 90px;
+  justify-content: space-evenly;
+  height: 350px;
+  width: 60px;
   align-items: center;
-  border-radius: 46px;
-  position: fixed;
+  border-radius: 38px;
+  position:fixed;
   left: 50px;
+  box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.073), inset 0px 0px 15px 10px rgba(0, 0, 0, 0.073);
 }
 
 img{
@@ -211,7 +150,7 @@ a{
 
 
 svg:hover {
-  animation: obnoxious 900ms infinite linear;
+  animation: obnoxious 2000ms infinite linear;
 }
 
 path {

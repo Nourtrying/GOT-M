@@ -6,8 +6,8 @@ import { MemberComponent } from './layouts/member/member.component';
 import { CreateAssignmentComponent } from './views/admin/manage-assignments/create-assignment/create-assignment/create-assignment.component';
 import { SignUpLayoutComponent } from './layouts/sign-up-layout/sign-up-layout.component';
 import { SignInLayoutComponent } from './layouts/sign-in-layout/sign-in-layout.component';
-
-
+import { NavBarComponent } from './layouts/nav-bar/nav-bar/nav-bar.component';
+import { NavBarUserComponent } from './layouts/nav-bar-user/nav-bar-user/nav-bar-user.component';
 const routes: Routes = [
   {path:'', component:FrontComponent, children:
   [
@@ -36,12 +36,19 @@ const routes: Routes = [
 
     {path:'manageMembers', loadChildren:()=>import('./views/admin/manage-members/manage-members.module').then(m=>m.ManageMembersModule)},
 
-    {path:'manageTeams', loadChildren:()=>import('./views/admin/manage-teams/manage-teams.module').then(m=>m.ManageTeamsModule)}
+    {path:'manageTeams', loadChildren:()=>import('./views/admin/manage-teams/manage-teams.module').then(m=>m.ManageTeamsModule)},
+
+    {path:'managePlayers', loadChildren:()=>import('./views/admin/manage-players/manage-players.module').then(m=>m.ManagePlayersModule)},
+    {path:'manageMeetings', loadChildren:()=>import('./views/admin/manage-meetings/manage-meetings.module').then(m=>m.ManageMeetingsModule)}
   ]},
   
-  {path:'member', component:MemberComponent},
+  {path:'member', component:MemberComponent, children:[
+    {path:'', loadChildren:()=>import('./views/member/member/member.module').then(m=>m.MemberModule)}
+  ]},
   {path:'sign-up', component:SignUpLayoutComponent},
-  {path:'sign-in', component:SignInLayoutComponent}
+  {path:'sign-in', component:SignInLayoutComponent},
+  {path:'nav-bar', component:NavBarComponent},
+  {path:'nav-bar-user', component:NavBarUserComponent}
 ];
 
 @NgModule({

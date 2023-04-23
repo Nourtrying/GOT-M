@@ -1,3 +1,38 @@
+@font-face {
+  font-family: 'Poppins-BlackItalic';
+  src: url('../../../../../assets/fonts/Poppins-BlackItalic.ttf');
+}
 h1,h3{
-  color: aliceblue;
+  color: #e8e8e8;
+}
+h1,h4{
+  font-weight:bolder; 
+  font-family: "Poppins-BlackItalic", sans-serif;
+}
+h3{
+  font-family: 'Poppins', medium;
+  font-size: medium; 
+  color: #e8e8e8b7;
+}
+.card{
+  border-radius: 20px;
+  --bs-card-border-width: 0px;
+  
+}
+.card-img-top{
+  border-radius: 20px 20px 0 0 ;
+} 
+
+.card-body{
+padding:20px;
+}
+
+
+.card-text{
+  font-family: 'Poppins' , medium;
+  font-size: 15px;
+}
+
+.container{
+  margin: 30px 0  ;
 }

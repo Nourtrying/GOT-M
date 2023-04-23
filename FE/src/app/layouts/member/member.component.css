@@ -1,195 +1,280 @@
+*{
 
+    font-family: 'Poppins',sans-serif;
 
-.container {
-  margin: 0;
-  margin-right: 0;
-  width: 100%;
+}
+.main{
   height: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
-
-
-.content{
-  margin-top: 20px;
-  position: relative;
-  display: flex;
   width: 100%;
-  justify-content: space-between;
-  
+    background-image: url('../../../assets/images/Path127.png');
+    background-repeat:no-repeat;
+    font-family: 'Poppins', sans-serif;
+
+    background-position-x: 84px;
+    background-position-y:-25px;
+    background-size:contain;
+    padding: 0;
+    margin: 0;
+position: fixed;
+flex-wrap: nowrap;
+
+
+  }
+  .container {
+position: relative;
+margin: auto;
+    width: 100%;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+  }
+
+.profile-media{
+
+  align-content: center;
 }
 
-.rightSide {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  /* border: 7px solid pink; */
-}
+.profile-pic{
 
-form{
-  display: flex;
-  flex-direction: column;
-}
-.info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  /* border: 1px solid black; */
-  width: 100%;
-}
-.upcomingMeeting,
-.activePerks,
-.todo {
-  flex: 1;
-  padding: 10px;
-}
 
-.todo {
-  margin-left: 10px;
-}
+  z-index: 3;
+  display:inline-block;
+  flex-wrap: nowrap;
 
-.progressBar {
-  margin-top: 10px;
-  width: 100%;
 }
-
-.progress-container {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
-.progress {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #ccc;
-  transform: translateY(-50%);
-}
-
-.circle {
-  position: relative;
-  width: 30px;
-  height: 30px;
+.profile-pic img {
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
-  border: 2px solid #ccc;
-  text-align: center;
-  line-height: 30px;
-  font-size: 12px;
-  background-color: #fff;
+}
+.rank{
+  display:inline-block;
 }
 
-.circle.active {
-  background-color: #ccc;
-  color: #fff;
-}
-
-
-
-.overlay{
-  position: absolute;
-  top: 30%;
-  left: 22%;
-  transform: translate(-50%, -50%);
-  
-}
-.textOverlay{
-  position: absolute;
-  top: 50%;
-  left: 22%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px;
-}
-.navbar{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-
-}
-span{
-  width: 0;
-  height: 0;
-  border-top: 100px solid black ;
-  border-bottom: 100px solid transparent;
-  border-right: 100px solid transparent;
-}
-#navbarul{
-  list-style: none;
-  display: flex;
-  background-color: #272727;
-  width: 572px;
-  padding: 10px;
-  align-items: center;
-  justify-content: space-around;
-  border-radius: 46px;
-}
-
-svg:hover {
-  animation: obnoxious 900ms infinite linear;
-}
-
-path {
-  fill: inherit;
-}
-.img{
-  padding: 0;
-  margin: 0;
-}
-
-@keyframes obnoxious {
-  0% {
-    fill: #FF0000;
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#e8e8e8;
+    width: 100%;
+    margin-top: 5%;
+    margin-left:35%;
+    /* border: 7px solid pink; */
   }
   
-  15% {
-    fill: #FF7F00;
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  .actives{
+    display: flex;
+    flex-direction: row;
+    padding:20px;
+    margin-bottom: 20px;
+  }
+  .upcomingMeeting{
+border-radius: 30px;
+padding:20px;
+border: solid 4px #e8e8e8;
+background: #2525253b;
+backdrop-filter: blur(2em);
+margin-bottom: 12px;
+  }
+  .activePerks{
+    border-radius: 30px;
+    padding:20px;
+    border: solid 4px #e8e8e8;
+    background: #2525253b;
+    backdrop-filter: blur(2em);
+    margin-top: 12px;
+  }
+  .todo {
+    flex: 1;
+    border-radius: 30px;
+    padding:20px;
+    border: solid 4px #e8e8e8;
+    background: #2525253b;
+    backdrop-filter: blur(2em);
+ margin-left: 12px;
+
   }
   
-  30% {
-    fill: #FFFF00;
+  .todocheck {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: row;
+  }
+  .todocheck p {
+    margin-left: 20px;
   }
   
-  45% {
-    fill: #00FF00;
+  .progressBar {
+    margin-top: 10px;
+    width: 100%;
+box-sizing: border-box;
   }
   
-  60% {
-    fill: #0000FF;
+  .progress-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  
   }
   
-  75% {
-    fill: #4B0082;
+  .progress {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    border-radius:30px;
+    height: 60px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+    background-color: #ccc;
+    transform: translateY(-50%);
   }
-  100% {
-    fill: #8F00FF;
+  .progress::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #fb0094, #0000ff, 
+    #00ff00, #ffff00, #fb0094, #0000ff, 
+    #00ff00, #ffff00 , #fb0094);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
   }
-}
+  
+  .progress::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, #fb0094, #0000ff, 
+    #00ff00, #ffff00, #fb0094, #0000ff, 
+    #00ff00, #ffff00 , #fb0094);
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    filter: blur(10px);
+  } 
 
-button{
-  width: 100%;
-  width: 122px;
-  height: 68px;
-  text-align: center;
-  border-radius: 34px;
-  font-size: 16px;
-  cursor: pointer;
-  border: 0;
-  font-weight: 600;
-  margin: 0;
-}
+  @keyframes animate {
+    0% {
+      background-position: 0 0;
+    }
+    0% {
+      background-position: 500% 0;
+    }
+    
+  }
+
+  .circle {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    background-color: #fff;
+  }
+  
+  .circle.active {
+    background-color: #ccc;
+    color: #fff;
+  }
+  
+
+  .overlay1{
+    display: flex;
+    flex-direction: column;
 
 
+    position: absolute;
+    top: 150px;
+margin-left: 6.3% ;
 
+  }
+  .overlay{
+    position: absolute;
+    top: 40px;
+margin-left: -30px ;
 
+    
+  }
+  .overlay1 p{
 
+position:relative;
+    color: #e8e8e8;
+
+    padding: 10px;
+    text-align: center;
+  }
+  .content{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+
+    
+  }
+  
+  .img{
+    padding: 0;
+    margin: 0;
+  }
+  
+  .clear {
+    clear: both;
+  }
+  
+  .checkBox {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px #fff;
+  }
+  
+  .checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+  }
+  
+  .checkBox input[type=checkbox]:checked + div {
+    left: -10px;
+    top: -10px;
+  }
+  
+  .checkBox input[type=checkbox] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+  }
+  
+  .transition {
+    transition: 300ms ease;
+  }

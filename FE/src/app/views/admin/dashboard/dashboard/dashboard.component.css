@@ -1,10 +1,63 @@
+@font-face {
+  font-family: 'Poppins-BlackItalic';
+  src: url('../../../../../assets/fonts/Poppins-BlackItalic.ttf');
+}
+.container{
+  font-family: 'poppins', sans-serif;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+  align-items: center;
+
+}
+.notif{
+  display:flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 30px;
+  height: 100%;
+  width:30%;
+  
+}
+p{
+  color:#e8e8e8;
+}
+h4{
+  font-size: small;
+  font-weight: bold;
+  color:#e8e8e8;
+}
+.urgent{
+
+  padding:15px;
+  margin: 15px;
+  border: solid 4px #B54B4B;
+  border-radius: 30px;
+  background: #2525253b;
+  backdrop-filter: blur(2em);
+  
+
+}
+.less-urgent{
+
+  padding:15px;
+  margin: 15px;
+  border: solid 4px #D9C55F;
+  border-radius: 30px;
+  background: #2525253b;
+  backdrop-filter: blur(2em);
+}
 .calendar {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 20px auto;
-  width: 300px;
+  width: 100%;
   border: 1px solid #ccc;
+  border-radius: 20px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  background: #2525253b;
+  backdrop-filter: blur(2em);
+
 }
 
 .header {
@@ -12,11 +65,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f2f2f2;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  background-color: #e8e8e8;
+  
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
-
+.header h2{
+font-family: 'Poppins-BlackItalic', sans-serif;
+}
 button {
   background-color: transparent;
   border: none;
@@ -39,10 +95,17 @@ thead th {
   border-bottom: 1px solid #ccc;
 }
 
+  table{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color:#e8e8e8;
+  }
+  
+
 tbody td {
   padding: 10px;
   text-align: center;
-  border: 1px solid #ccc;
+
   vertical-align: top;
 }
 

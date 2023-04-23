@@ -1,0 +1,174 @@
+.user-pic{
+width: 50px;
+border-radius: 50%;
+cursor: pointer;
+
+}
+.user-info h4{
+  font-weight: 600;
+  
+}
+
+.container{
+  flex-wrap: nowrap;
+  }
+
+.sub-menu-wrap{
+position: absolute;
+  top:100%;
+  right:auto;
+  width: 180px;
+max-height: 0px;
+overflow: hidden;
+transition: max-height 0.5s;
+z-index: 1;
+
+}
+.sub-menu-wrap.open-menu{
+
+max-height: 250px;
+
+
+}
+.sub-menu{
+  background-color: rgba(255, 255, 255, .5);
+
+  backdrop-filter: blur(2em);
+
+border-radius: 20px;
+padding: 20px;
+margin: 10px;
+} 
+.sub-menu hr {
+  border:0;
+  height: 1px;
+  width:100%;
+  background: #2E2E2E;
+  margin: 15px 0 10px;
+
+}
+.sub-menu-link{
+  display:flex;
+  align-items: center;
+  text-decoration: none;
+  color:#272727;
+  margin: 12px 0;
+
+}
+.sub-menu-link p{
+width: 100%;
+
+}
+.sub-menu-link span{
+  
+  font-size: 20px;
+  transition: transorm 0.5s;
+  }
+.sub-menu-link:hover span{
+
+transform: translateX(5px);
+  }
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+    
+    }
+.user-info{
+
+display: flex;
+align-items: center;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    background-color: #272727;
+    width: 300%;
+    max-width: 2000px;
+    height:50px;
+    padding: 5px;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 34px;
+    box-shadow: inset 0px 0px 15px 10px rgba(0, 0, 0, 0.073), inset 0px 0px 15px 10px rgba(0, 0, 0, 0.073);
+  }
+ .items{
+  margin-left:-260px;
+ }
+  .buttons{
+    width: 100%;
+    max-width: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 20px;
+
+  }
+  .signup{
+    width: 100%;
+    width: 117px;
+    height: 50px;
+    text-align: center;
+    border-radius: 34px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0;
+    font-weight: 600;
+    margin: 0;
+    color: #2E2E2E;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  .signup a {
+    color: #2E2E2E;
+  }
+  a{
+    text-decoration:none;
+  }
+  
+  a:visited {
+    color: inherit;
+  }
+
+  .profile{
+    background-color: transparent;
+  }
+  .profile ul{
+    background-color:#272727;
+
+  }
+  path {
+    fill: inherit;
+  }
+  
+  svg:hover {
+    animation: obnoxious 2000ms infinite linear;
+  }  
+  @keyframes obnoxious {
+    0% {
+      fill: #FF0000;
+    }
+    
+    15% {
+      fill: #FF7F00;
+    }
+    
+    30% {
+      fill: #FFFF00;
+    }
+    
+    45% {
+      fill: #00FF00;
+    }
+    
+    60% {
+      fill: #0000FF;
+    }
+    
+    75% {
+      fill: #4B0082;
+    }
+    100% {
+      fill: #8F00FF;
+    }
+  }

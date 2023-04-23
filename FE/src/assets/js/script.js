@@ -94,3 +94,9 @@ function update(currentActive) {
 
   
 }
+
+    
+function toggleMenu (){
+ subMenu = document.querySelector(".sub-menu-wrap");
+subMenu.classList.toggle("open-menu");
+}

@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Poppins-BlackItalic';
+    src: url('../../../../../assets/fonts/Poppins-BlackItalic.ttf');
+  }
+  h1,h3{
+    color: #e8e8e8;
+  }
+  h1,h4{
+    font-weight:bolder; 
+    font-family: "Poppins-BlackItalic", sans-serif;
+  }
+  h3{
+    font-family: 'Poppins', medium;
+    font-size: medium; 
+    color: #e8e8e8b7;
+  }
+  .card{
+    border-radius: 20px;
+    --bs-card-border-width: 0px;
+    
+  }
+  .card-img-top{
+    border-radius: 20px 20px 0 0 ;
+  } 
+  
+  .card-body{
+  padding:20px;
+  }
+  
+  
+  .card-text{
+    font-family: 'Poppins' , medium;
+    font-size: 15px;
+  }
+  
+  .container{
+    margin: 30px 0  ;
+  }
+  button {
+    background-color: #1c1c1c;
+    color: #e8e8e8;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1em 2em;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 3px solid  #1c1c1c;
+    box-shadow: 0 0 0 0  #717171;
+
+  }
+  
+  button:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0  #717171;
+  };
+  
+  button:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+  };
