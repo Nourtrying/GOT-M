@@ -8,6 +8,7 @@ import { SignUpLayoutComponent } from './layouts/sign-up-layout/sign-up-layout.c
 import { SignInLayoutComponent } from './layouts/sign-in-layout/sign-in-layout.component';
 import { NavBarComponent } from './layouts/nav-bar/nav-bar/nav-bar.component';
 import { NavBarUserComponent } from './layouts/nav-bar-user/nav-bar-user/nav-bar-user.component';
+import { NotfoundComponent } from './layouts/notfound/notfound/notfound.component';
 const routes: Routes = [
   {path:'', component:FrontComponent, children:
   [
@@ -48,7 +49,8 @@ const routes: Routes = [
   {path:'sign-up', component:SignUpLayoutComponent},
   {path:'sign-in', component:SignInLayoutComponent},
   {path:'nav-bar', component:NavBarComponent},
-  {path:'nav-bar-user', component:NavBarUserComponent}
+  {path:'nav-bar-user', component:NavBarUserComponent},
+  {path: '**', component:NotfoundComponent}
 ];
 
 @NgModule({

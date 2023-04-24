@@ -12,6 +12,7 @@ import { NavBarComponent } from './nav-bar/nav-bar/nav-bar.component';
 import { NavBarUserComponent } from './nav-bar-user/nav-bar-user/nav-bar-user.component';
 import { SettingsComponent } from './settings/settings.component';
 import { CalendarComponent } from './calendar/calendar.component';
+import { NotfoundComponent } from './notfound/notfound/notfound.component';
 
 
 
@@ -28,6 +29,7 @@ import { CalendarComponent } from './calendar/calendar.component';
     NavBarUserComponent,
     SettingsComponent,
     CalendarComponent,
+    NotfoundComponent,
 
   ],
   imports: [
