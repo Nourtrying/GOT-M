@@ -14,6 +14,7 @@ import { SettingsComponent } from './settings/settings.component';
 import { CalendarComponent } from './calendar/calendar.component';
 import { NotfoundComponent } from './notfound/notfound/notfound.component';
 
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -30,12 +31,14 @@ import { NotfoundComponent } from './notfound/notfound/notfound.component';
     SettingsComponent,
     CalendarComponent,
     NotfoundComponent,
+    
 
   ],
   imports: [
     CommonModule,
     LayoutsRoutingModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ]
 })
 export class LayoutsModule { }

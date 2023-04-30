@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Add a new event</h2>
+  <form #f="ngForm" name="theForm" (submit)="addEvent(f)">
+
+    <div class="form-group">
+      <label for="eventTitle">Event Title:</label>
+      <input type="text" class="form-control" id="eventTitle" placeholder="Enter event title" [(ngModel)]="event.eventtitle" #eventtitle="ngModel" name="eventtitle" >
+      <span class="help-block danger" *ngIf="eventtitle.errors?.['required'] && eventtitle.touched">
+        The model name is required
+      </span>
+      
+
+    </div>
+    <div class="form-group">
+      <label for="startingDate">Starting Date:</label>
+      <input type="date" class="form-control" id="startingDate" name="startingdate" [(ngModel)]="event.startingdate" #startingdate="ngModel">
+    </div>
+    <div class="form-group">
+      <label for="endingDate">Ending Date:</label>
+      <input type="date" class="form-control" id="endingDate" name="endingdate" [(ngModel)]="event.endingdate" #endingdate="ngModel">
+    </div>
+    
+    <div class="form-group">
+      <label for="eventBanner">Event Banner:</label>
+      <input type="file" class="form-control-file" id="eventBanner" name="eventbanner">
+
+    </div>
+    <div class="form-group">
+      <label for="eventDescr">Event Description:</label>
+      <textarea class="form-control" id="eventDescr" name="eventdescr" [(ngModel)]="event.eventdescr" #eventdescr="ngModel" rows="3"></textarea>
+    </div>
+    <button type="submit" [disabled]="f.invalid" class="btn btn-primary">Submit</button>
+  </form>
+</div>

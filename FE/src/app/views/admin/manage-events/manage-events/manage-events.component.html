@@ -1,36 +1,19 @@
 <div class="container">
+  
   <div class="row">
     <div class="col-md-8 ">
-      <div class="table-responsive">
-          <table class="table">
-              <thead>
-                <tr>
-                  <th>#</th>
-                  <th>Event Title</th>
-                  <th>Event Period</th>
-                  <th>Status</th>
-                  
-                </tr>
-              </thead>
-              <tbody>
-                <tr >
-                  <td> <input type="checkbox" name="" id=""></td>
-                  <td>nn</td>
-                  <td> nn</td>
-                  <td> nn</td>
-                </tr>
-              </tbody>
-            </table>
-      </div>
-
-  </div>
-  
-
-    <div class="col-md-4 d-flex align-items-center justify-content-center   ">
-      <button >Add</button> 
+      <router-outlet></router-outlet>
+    </div>
       
-      <button >Delete</button> 
-      <button >Modify</button>
+
+
+
+    <div class="col-md-4 d-flex align-items-center justify-content-center">
+      <a routerLink="/admin/manageEvents/eventsList"><button >Events</button> </a>
+      <a routerLink="/admin/manageEvents/addEvent"><button >Add</button> </a>
+      <a routerLink="/admin/manageEvents/modifyEvent"><button >Modify</button> </a>
+      <button>Delete</button> 
+      
   </div>
   </div>
     
