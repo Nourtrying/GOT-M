@@ -1,0 +1,185 @@
+
+
+
+.table{
+  color: #E8E8E8;
+
+  
+}
+th, thead{
+  position: sticky;
+  top: 0;
+}
+.col-md-8{
+  border: solid 4px #E8E8E8;
+  border-radius: 25px;
+}
+.col-md-8 table{
+  table-layout:fixed;
+  width:100%
+
+}
+.col-md-4 {
+  display: flex;
+  flex-direction: column;
+  padding: 80px;
+}
+.col-md-4 button{
+width:100%;
+margin: 5%;
+}
+button {
+  background-color: #E8E8E8;
+  color: #1c1c1c;
+  border-radius: 10em;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 1em 2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid  #1c1c1c;
+  box-shadow: 0 0 0 0  #1c1c1c;
+
+}
+
+button .btn-actions {
+  width:50px;
+  margin: 5%;
+  background-color: #E8E8E8;
+  color: #1c1c1c;
+  border-radius: 5em;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 1em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid  #1c1c1c;
+  box-shadow: 0 0 0 0  #1c1c1c;
+
+}
+
+.actions{
+  display: flex;
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0  #1c1c1c;
+}
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+.container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.tabless{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: column; */
+}
+
+.tab{
+  border: 4px solid #E8E8E8;
+  border-radius: 27px;
+  padding: 10px;
+  color: beige;
+  overflow: auto;
+  /* height: 500px;
+  width: 400px; */
+
+}
+
+/* .tab1{
+  
+  /* height: max-content; 
+}
+
+.tab2{
+  /* width: max-content; 
+} */
+
+.buttons{
+  width: 100%;
+}
+ul{
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+input {
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  
+}
+input:focus {
+  color: #ccc;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+}
+
+textarea {
+  color: #ccc;
+  background-color: transparent;
+  border: none;
+  
+}
+textarea:focus {
+  color: #ccc;
+  background-color: transparent;
+  outline: none;
+  border-bottom: 2px solid #ccc;
+}
+
+.trans {
+  opacity: 0.5;
+}
+
+button.btn-primary,
+button.btn-danger {
+  padding: 0.5em 1em;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+button.btn-primary {
+  background-color: #1c1c1c;
+  color: #E8E8E8;
+}
+
+button.btn-danger {
+  background-color: #E8E8E8;
+  color: #1c1c1c;
+}
+
+button.btn-primary:hover,
+button.btn-danger:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #1c1c1c;
+}
+
+button.btn-primary:active,
+button.btn-danger:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 black;
+}
+
+.actions button {
+  width: 100%;
+  margin-bottom: 5px;
+}

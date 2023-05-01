@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse  } from '@angular/common/http';
+import { HttpClient, HttpErrorResponse, HttpParams   } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import { map } from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs'
@@ -39,11 +39,25 @@ export class EventService {
         return res['data'];
       }),
       catchError(error => {
-        console.log("are in the error of qtore?")
+        console.log("are in the error of store?")
         console.error("Error:", error);
         return throwError(error);
       })
     );
+  }
+
+  update(event: Event) {
+    console.log('update(event: Event)')
+    console.log(event)
+    
+    return this.http.put(`${this.baseUrl}/update.php`, { data: event });
+  }
+
+  delete(id: any) {
+    const params = new HttpParams()
+      .set('id', id.toString());
+
+    return this.http.delete(`${this.baseUrl}/delete.php`, { params: params });
   }
   
 }

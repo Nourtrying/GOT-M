@@ -1,31 +1,55 @@
-<div class="row">
-  <div *ngIf="error">{{error}}</div>
-  <div *ngIf="success">{{success}}</div>
-</div>
-<div class="table-responsive">
-  <table class="table">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Event Title</th>
-          <th>Event Period</th>
-          <th>Status</th>
-          
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let event of events">
-          <td> <input type="checkbox" name="" value="{{event.idevent}}" id=""></td>
-          <td>{{event.eventtitle}}</td>
-          <td> {{event.startingdate}} - {{event.startingdate}}</td>
-          <td> {{event.startingdate}} </td>
-        </tr>
-        <tr>
-          <td> <input type="checkbox" name="" value="" id=""></td>
-          <td>ghfhf</td>
-          <td> gfhgf</td>
-          <td> gfhfgh </td>
-        </tr>
-      </tbody>
-    </table>
+<div class="container">
+  <div class="row">
+    <div *ngIf="error" class="alert alert-danger">{{error}}</div>
+    <div *ngIf="success" class="alert alert-success">{{success}}</div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="table-responsive">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Event Title</th>
+              <th>Event Period</th>
+              <th>Status</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let event of events; let i = index">
+              <!-- <td>{{event.idevent}}</td> -->
+              <input type="hidden" [(ngModel)]="events[i].idevent" name="idevent" #idevent="ngModel">
+              <td>
+                <input type="text" [(ngModel)]="events[i].eventtitle" class="form-control" required pattern="^[a-zA-Z]+$" #eventtitle="ngModel">
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="date" [(ngModel)]="events[i].startingdate" class="form-control" required #startingdate="ngModel">
+                  <div class="input-group-append">
+                    <span class="input-group-text">to</span>
+                  </div>
+                  <input type="date" [(ngModel)]="events[i].endingdate" class="form-control" required #endingdate="ngModel">
+                </div>
+              </td>
+              <td>  
+                <p>{{isEventOngoing(event) ? 'Ongoing' : 'Finished'}}</p>
+
+
+              </td>
+              <td> 
+                <div class="form-group" style="height: 100%; overflow-y: auto;">
+                  <textarea class="form-control" id="eventDescr" name="eventdescr" [(ngModel)]="event.eventdescr" #eventdescr="ngModel" rows="1" style="resize:none;"></textarea>
+                </div>
+              </td>
+              <td class="actions">
+                <button class="btn btn-primary" type="button" value="Update" (click)="updateEvent(eventtitle, startingdate, endingdate, eventdescr, idevent)">Update</button>
+                <button class="btn btn-danger" type="button" (click)="deleteEvent(event.idevent ? event.idevent : 0)" value="Delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
 </div>
