@@ -11,17 +11,19 @@ if(isset($postdata) && !empty($postdata))
 	
   // Validate.
   // Validate.
-  if(trim($request->data->eventtitle) === '' )
-  {
-    return http_response_code(400);
-  }
-	echo $request;
-  // Sanitize.
-  $eventtitle = mysqli_real_escape_string($con, trim($request->eventtitle));
-  $startingdate = mysqli_real_escape_string($con, $request->startingdate);
-  $endingdate = mysqli_real_escape_string($con, $request->endingdate);
-  $eventdescr = mysqli_real_escape_string($con, $request->eventdescr);
+  
 
+  // Sanitize.
+  $eventtitle = mysqli_real_escape_string($con, trim($request->data->eventtitle));
+
+  $startingdate = mysqli_real_escape_string($con, trim($request->data->startingdate));
+  $startingdate = date('Y-m-d', strtotime(trim($request->data->startingdate)));
+
+  $endingdate = mysqli_real_escape_string($con, trim($request->data->endingdate));
+  $endingdate = date('Y-m-d', strtotime(trim($request->data->endingdate)));
+
+  $eventdescr = mysqli_real_escape_string($con, trim($request->data->eventdescr));
+  echo $eventtitle;
   // Store.
   $sql = "INSERT INTO `event`(`eventtitle`,`startingdate`,`endingdate`,`eventdescr`) VALUES ('{$eventtitle}','{$startingdate}','{$endingdate}','{$eventdescr}')";
 

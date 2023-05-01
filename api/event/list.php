@@ -5,7 +5,7 @@
 require '../connect.php';
     
 $events = [];
-$sql = "SELECT idevent, eventtitle, startingdate, endingdate  FROM event";
+$sql = "SELECT idevent, eventtitle, startingdate, endingdate, eventdescr  FROM event";
 
 if($result = mysqli_query($con,$sql))
 {
@@ -16,6 +16,7 @@ if($result = mysqli_query($con,$sql))
     $events[$cr]['eventtitle'] = $row['eventtitle'];
     $events[$cr]['startingdate'] = $row['startingdate'];
     $events[$cr]['endingdate'] = $row['endingdate'];
+    $events[$cr]['eventdescr'] = $row['eventdescr'];
     $cr++;
   }
     
